@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Stack;
-import java.awt.Color;
+//import java.awt.Color;
 public class M extends JFrame implements ActionListener{
 
 	JButton Convert, Clear;
@@ -21,6 +21,8 @@ public class M extends JFrame implements ActionListener{
 		JFrame f = new JFrame("Value Converter");
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setSize(300,400);
+		f.setResizable(false);
+		
 
 		// creation of panels 
 		JPanel p = new JPanel();
@@ -67,7 +69,7 @@ public class M extends JFrame implements ActionListener{
 
 		Clear.addActionListener(this);
 		Convert.addActionListener(this);
-		f.show();
+		f.setVisible(true);
 
 	} /*M()*/
 
@@ -83,7 +85,7 @@ public class M extends JFrame implements ActionListener{
 				input = screen1.getText();
 				for (int i =0; i < input.length(); i++) {
 					if (input.charAt(i) < 48 || input.charAt(i) > 57) {
-						error.setText("The value entered must be in decimal format");
+						error.setText("<html><font color='red'>ERROR:<br/>The value entered must be in Decimal format</font></html>");
 						validate = false;
 						errorLock();
 					}
@@ -99,7 +101,7 @@ public class M extends JFrame implements ActionListener{
 				input = screen2.getText();
 				for (int i =0; i < input.length(); i++) {
 					if (input.charAt(i) < 48 || input.charAt(i) > 49) {
-						error.setText("The value entered must be in binary format");
+						error.setText("<html><font color='red'>ERROR:<br/>The value entered must be in Binary format</font></html>");
 						validate = false;
 						errorLock();
 					}
@@ -117,7 +119,7 @@ public class M extends JFrame implements ActionListener{
 				input = screen3.getText();
 				for (int i =0; i < input.length(); i++) {
 					if ((input.charAt(i) < 48 || ((input.charAt(i) > 57) && input.charAt(i) < 65))|| input.charAt(i) > 70) {
-						error.setText("The value entered must be in Hexadecimal format");
+						error.setText("<html><font color='red'>ERROR:<br/>The value entered must be in Hex format</font></html>");
 						validate = false;
 						errorLock();
 					}
