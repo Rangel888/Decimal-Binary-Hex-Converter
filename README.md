@@ -8,3 +8,7 @@ project to understand the logic behind the various converters I utilized in my u
 force the user to press the clear button to restart operations. Additionally, after a successful attempt the screen will also lock out to maintain the 
 integrity of the values that need to be referenced. <b>HTML</b> was utilized for the formatting of the error messages. Below are the methods that were used to their descriptions</p>
 
+<h2>toDecimal</h2>
+<p>This method takes in a <b>String</b> binary number and converts it into the proper decimal equivalent. A <b>for-loop</b> is used to read the binary
+number from right to left and utlizies the <b>Math.pow(base,exponent)</b> functionality of the <b>Math</b> class to properly calculate the equivalent decimal number.
+The result is then set in the Decimal text box.</p>
