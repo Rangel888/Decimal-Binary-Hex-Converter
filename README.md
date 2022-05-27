@@ -14,4 +14,11 @@ number from right to left and utlizies the <b>Math.pow(base,exponent)</b> functi
 The result is then set in the Decimal text box.</p>
 
 <h2>tohexaDecimal</h2>
-<p>This method takes in a <b>String</b> binary number and converts it into the proper hexadecimal equivalent. A <b>while-loop</b> and the method <b>???</b> are repeatedely used to convert the last four bits of the binary number into hexadecimal. Each iteration of the <b>while-loop</b> the converted bits are placed into a <b>Stack</b> and the binary string is shortened by the last 4 bits. Once this process is complete, the binary string is checked to see if there are less than 4 bits remaining. If so, the remaining bits are padded with 0's to ensure that the method <b>???</b> can properly convert it and is ultimately placed in the <b>Stack</b>. The <b>Stack</b> is then repeatedely popped into an empty <b>String</b>. The result is set in the HexaDecimal text box.</p>
+<p>This method takes in a <b>String</b> binary number and converts it into the proper hexadecimal equivalent. A <b>while-loop</b> and the method <b>hexConversion</b> are repeatedely used to convert the last four bits of the binary number into hexadecimal. Each iteration of the <b>while-loop</b>, the converted bits are placed into a <b>Stack</b> and the binary string is shortened by the last 4 bits. Once this process is complete, the binary string is checked to see if there are less than 4 bits remaining. If so, the remaining bits are padded with 0's to ensure that the method <b>hexConversion</b> can properly convert it and is ultimately placed in the <b>Stack</b>. The <b>Stack</b> is then repeatedely popped into an empty <b>String</b>. The result is set in the HexaDecimal text box.</p>
+
+<h2>binaryConversion</h2>
+<p>This method takes in a hex <b>character</b> and converts it into the proper 4 bit binary equivalent. A switch is used to account for all possible scenerios of <b>characters</b>.</p>
+
+<h2>hexConversion</h2>
+<p>This method takes in a <b>String</b> 4 bit binary value and convets it into its eqivalent HexaDecimal value. A switch is used to account for all possible scenerios of 4 bit binary inputs.</p>
+
