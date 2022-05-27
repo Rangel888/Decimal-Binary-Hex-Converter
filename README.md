@@ -1,6 +1,8 @@
 # Decimal-Binary-Hex-Converter
+  
 ![Converter](https://user-images.githubusercontent.com/70422090/169673542-72d1823c-9b30-42ba-884e-1b5b5f02a2f5.jpg)
-
+![error](https://user-images.githubusercontent.com/70422090/170619243-26007040-88d1-4a48-b3a0-6dde113fb944.jpg)
+![Success](https://user-images.githubusercontent.com/70422090/170619579-d8fa7988-48e2-494e-8a0e-4dcbfaa93e54.jpg)
 
 <h2>Project Description</h2>
 <p>This <b>Java</b> based GUI converter takes in a user inputted value and converts it to the other two equivalent values. I decided to do this
@@ -26,4 +28,5 @@ number from right to left and utlizies the <b>Math.pow(base,exponent)</b> functi
 
 <h2>errorLock</h2>
 <p>This method locks out all text boxes in both failures and sucessful conversions. The only way to unlock the text boxes is through the use of the <b>Clear</b> button.</p>
+
 
