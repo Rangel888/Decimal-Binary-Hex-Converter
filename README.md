@@ -10,8 +10,10 @@ integrity of the values that need to be referenced. <b>HTML</b> was utilized for
 
 <h2>toDecimal</h2>
 <p>This method takes in a <b>String</b> binary number and converts it into the proper decimal equivalent. A <b>for-loop</b> is used to read the binary
-number from right to left and utlizies the <b>Math.pow(base,exponent)</b> functionality of the <b>Math</b> class to properly calculate the equivalent decimal number.
-The result is then set in the Decimal text box.</p>
+number from right to left and utlizies the <b>Math.pow(base,exponent)</b> functionality of the <b>Math</b> class to properly calculate the equivalent decimal number.The result is then set in the Decimal text box.</p>
+
+<h2>toBinary</h2>
+<p>This method takes in a <b>String</b> and an <b>int</b>. The <b>String</b> can be either a <b>Decimal</b> or a <b>HexaDecimal</b> number depending on the <b>int</b> (1 = decimal, 3 = hexadecimal). In the decimal scenerio, the decimal number is repeatedly modded and the remainder is the binary digit and will be structured from right to left. The newly created binary number is then used as an input for the method <b>tohexaDecimal</b>. In the hexadecimal scenerio, the hex number has individual <b>characters</b> converted using the <b>binaryConversion</b> method from right to left. The resulting <b>binary</b> number then has any padded zeros removed from the left side of the <b>binary</b> number. The newly created binary number is then used as an input for the method <b>toDecimal</b>.
 
 <h2>tohexaDecimal</h2>
 <p>This method takes in a <b>String</b> binary number and converts it into the proper hexadecimal equivalent. A <b>while-loop</b> and the method <b>hexConversion</b> are repeatedely used to convert the last four bits of the binary number into hexadecimal. Each iteration of the <b>while-loop</b>, the converted bits are placed into a <b>Stack</b> and the binary string is shortened by the last 4 bits. Once this process is complete, the binary string is checked to see if there are less than 4 bits remaining. If so, the remaining bits are padded with 0's to ensure that the method <b>hexConversion</b> can properly convert it and is ultimately placed in the <b>Stack</b>. The <b>Stack</b> is then repeatedely popped into an empty <b>String</b>. The result is set in the HexaDecimal text box.</p>
@@ -21,4 +23,7 @@ The result is then set in the Decimal text box.</p>
 
 <h2>hexConversion</h2>
 <p>This method takes in a <b>String</b> 4 bit binary value and convets it into its eqivalent HexaDecimal value. A switch is used to account for all possible scenerios of 4 bit binary inputs.</p>
+
+<h2>errorLock</h2>
+<p>This method locks out all text boxes in both failures and sucessful conversions. The only way to unlock the text boxes is through the use of the <b>Clear</b> button.</p>
 
