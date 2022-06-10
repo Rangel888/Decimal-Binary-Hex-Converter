@@ -1,7 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.awt.event.ActionEvent;
-
 import org.junit.jupiter.api.Test;
 
 class MTest {
