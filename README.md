@@ -8,7 +8,7 @@
 <p>This <b>Java</b> based GUI converter takes in a user inputted value and converts it to the other two equivalent values. I decided to do this
 project to understand the logic behind the various converters I utilized in my undergraduate studies. During an error filled input, the screens will lock out and 
 force the user to press the clear button to restart operations. Additionally, after a successful attempt the screen will also lock out to maintain the 
-integrity of the values that need to be referenced. <b>HTML</b> was utilized for the formatting of the error messages. Below are the methods that were used and their descriptions</p>
+integrity of the values that need to be referenced. <b>HTML</b> was utilized for the formatting of the error messages. M.test is a JUnit test that tests the proper functionality of the methods used. Value Converter.JAR is an executable JAR file that can run the GUI from your desktop without the need of opening an IDE. Below are the methods that were used and their descriptions</p>
 
 <h2>toDecimal</h2>
 <p>This method takes in a <b>String</b> binary number and converts it into the proper decimal equivalent. A <b>for-loop</b> is used to read the binary
